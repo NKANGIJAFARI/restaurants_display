@@ -1,10 +1,12 @@
 import React from 'react';
-import Product from './components/Product';
+import Product from '../../Components/Product/Product';
 import products from '../../Data/data';
 
 const HomeScreen = () => {
   return (
     <div id='wrapper'>
+      {/* Will be iterating in the products/restaurants and forEach one,
+      we display a Product/restaurant and its details */}
       {products.map((product) => (
         <Product
           image={product.image}
