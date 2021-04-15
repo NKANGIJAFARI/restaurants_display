@@ -12,16 +12,21 @@
 
   & .search {
     position: fixed;
-    top: 31px;
+    top: 48px;
     left: 50%;
     transform: translate(-50%, 0px);
     z-index: 3;
+
+    & form {
+      width: 420px;
+    }
 
     & input {
       font-size: 1.6rem;
       padding: 0.7rem 3rem;
       border-radius: 10px;
       outline: none;
+      width: 100%;
     }
 
     & button {
@@ -45,5 +50,9 @@
   #wrapper {
     grid-gap: 20px;
     padding: 40px 25px;
+
+    & form {
+      width: 300px;
+    }
   }
 }
