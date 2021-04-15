@@ -4,6 +4,16 @@ import './header.scss';
 const Header = () => {
   return (
     <div className='header'>
+      <div className='smallScreenNav'>
+        <nav className='smallScreenNav__nav'>
+          <Link to='/' className='smallScreenNav__nav--links'>
+            <i class='fas fa-home'></i>
+          </Link>
+          <Link to='/map' className='smallScreenNav__nav--links'>
+            <i class='fas fa-map-marker-alt'></i>
+          </Link>
+        </nav>
+      </div>
       <div className='header__logo'>
         <Link to='/' className='nav__links'>
           <span>SHISHEO</span>

@@ -95,13 +95,13 @@
   #wrapper {
     & .search {
       position: fixed;
-      top: 7px;
-      left: 62%;
+      top: 53px;
+      left: 50%;
       transform: translate(-50%, 0px);
       z-index: 3;
 
       & form {
-        width: 270px;
+        width: 350px;
       }
     }
   }

@@ -20,16 +20,6 @@ const HomeScreen = () => {
 
   return (
     <div id='wrapper'>
-      <div className='smallScreenNav'>
-        <nav className='smallScreenNav__nav'>
-          <Link to='/' className='smallScreenNav__navlinks'>
-            <i class='fas fa-home'></i>
-          </Link>
-          <Link to='/map' className='smallScreenNav__navlinks'>
-            <i class='fas fa-map-marker-alt'></i>
-          </Link>
-        </nav>
-      </div>
       <div className='search'>
         <form>
           <button type='submit'>
