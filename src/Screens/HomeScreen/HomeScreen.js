@@ -1,5 +1,6 @@
 import React from 'react';
 import Product from './components/Product';
+import products from '../../Data/data';
 
 const HomeScreen = () => {
   return (
