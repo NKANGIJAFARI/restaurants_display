@@ -1,6 +1,6 @@
 #wrapper {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 20px;
   padding: 40px;
   box-sizing: border-box;
   display: grid;
@@ -12,7 +12,7 @@
 
   & .search {
     position: fixed;
-    top: 5px;
+    top: 15px;
     left: 50%;
     transform: translate(-50%, 0px);
 
@@ -21,6 +21,21 @@
       padding: 0.7rem 3rem;
       border-radius: 10px;
       outline: none;
+    }
+
+    & button {
+      margin-right: -20px;
+      z-index: 2;
+      color: black;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(41%, -50%);
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 1.7rem;
+      opacity: 0.8;
     }
   }
 }

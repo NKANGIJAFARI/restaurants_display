@@ -20,11 +20,16 @@ const HomeScreen = () => {
   return (
     <div id='wrapper'>
       <div className='search'>
-        <input
-          type='text'
-          placeholder='Search in restaurants'
-          onChange={searchProducts}
-        />
+        <form>
+          <button type='submit'>
+            <i class='fas fa-search'></i>
+          </button>
+          <input
+            type='text'
+            placeholder='Search in restaurants'
+            onChange={searchProducts}
+          />
+        </form>
       </div>
       {/* Will be iterating in the products/restaurants and forEach one,
       we display a Product/restaurant and its details */}
