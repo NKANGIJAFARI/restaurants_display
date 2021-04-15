@@ -2,14 +2,6 @@ import React from 'react';
 import products from '../../Data/data';
 
 const Header = () => {
-  const searchProducts = (searchText) => {
-    const existingProducts = products.filter((product) =>
-      product.name.includes(searchText),
-    );
-
-    console.log(existingProducts);
-  };
-
   return (
     <div className='header'>
       <div className='header__logo'>
@@ -21,7 +13,7 @@ const Header = () => {
           placeholder='Search in chats'
           onChange={(e) => {
             searchProducts(e.target.value);
-            e.target.value ? setSearching(true) : setSearching(false);
+            // e.target.value ? setSearching(true) : setSearching(false);
           }}
         />
       </div>
