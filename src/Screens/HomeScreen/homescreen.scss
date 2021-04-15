@@ -9,4 +9,18 @@
   grid-template-rows: repeat(3, 270px);
   grid-gap: 25px;
   grid-auto-rows: 270px;
+
+  & .search {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+
+    & input {
+      font-size: 1.6rem;
+      padding: 0.7rem 3rem;
+      border-radius: 10px;
+      outline: none;
+    }
+  }
 }

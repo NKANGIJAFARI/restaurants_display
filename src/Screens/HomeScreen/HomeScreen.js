@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Product from '../../Components/Product/Product';
 import Allproducts from '../../Data/data';
 import './homeScreen.scss';
 
 const HomeScreen = () => {
-  const [searching, setSearching] = useState(false);
   const [products, setProducts] = useState(Allproducts);
-  const [keyWord, setKeyWord] = useState('');
 
   const searchProducts = (e) => {
     if (e.target.value) {
@@ -17,13 +15,11 @@ const HomeScreen = () => {
     } else {
       setProducts(Allproducts);
     }
-
-    console.log(e.target.value);
   };
 
   return (
     <div id='wrapper'>
-      <div className='header__search'>
+      <div className='search'>
         <input
           type='text'
           placeholder='Search in restaurants'
