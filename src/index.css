@@ -44,5 +44,6 @@ body {
 
 .App__container {
   width: 100%;
-  max-width: 1450px;
+  position: relative;
+  max-width: 1350px;
 }

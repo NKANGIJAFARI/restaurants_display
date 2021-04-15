@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 55px;
+  max-width: 1350px;
 
   & .smallScreenNav {
     display: none;
@@ -50,14 +51,15 @@
       bottom: 0;
       width: 100%;
       padding: 4px;
-      background-color: blue;
+      background-color: white;
+      margin-top: 4px;
 
       &__nav {
         display: flex;
         justify-content: space-around;
 
         &--links {
-          color: white;
+          color: black;
           font-size: 2rem;
         }
       }
