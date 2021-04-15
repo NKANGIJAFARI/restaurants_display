@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Product from '../../Components/Product/Product';
-import products from '../../Data/data';
+import Allproducts from '../../Data/data';
 import './homeScreen.scss';
 
 const HomeScreen = () => {
-  const searchProducts = (searchText) => {
-    const existingProducts = products.filter((product) =>
-      product.title.toLowerCase().includes(searchText.toLowerCase()),
-    );
+  const [searching, setSearching] = useState(false);
+  const [products, setProducts] = useState(Allproducts);
 
-    console.log(existingProducts);
+  const searchProducts = (searchText) => {
+    if (searchText) {
+      const existingProducts = products.filter((product) =>
+        product.title.toLowerCase().includes(searchText.toLowerCase()),
+      );
+
+      setProducts(existingProducts);
+    }
   };
 
   return (

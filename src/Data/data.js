@@ -2,7 +2,7 @@ const products = [
   {
     image: '/images/1.jpg',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'Jefas mess restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',
@@ -24,7 +24,7 @@ const products = [
   {
     image: '/images/3.webp',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'Kampala sushi restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',
@@ -35,7 +35,7 @@ const products = [
   {
     image: '/images/4.webp',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'Deira sub restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',
@@ -46,9 +46,9 @@ const products = [
   {
     image: '/images/5.jpg',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
-    promotion: '20% off selected items',
-    desc: 'Arabic, lebanese, chinese',
+    title: 'Arizona restaurant',
+    promotion: '15% off selected items',
+    desc: 'lebanese, chinese, Arabic',
     rating: '4',
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
@@ -57,7 +57,7 @@ const products = [
   {
     image: '/images/6.jpg',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'Pizza ground restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',
@@ -68,7 +68,7 @@ const products = [
   {
     image: '/images/7.jpeg',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'Hamad cookie restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',
@@ -79,7 +79,7 @@ const products = [
   {
     image: '/images/8.jpg',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'Sushi Kamag restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',
@@ -90,7 +90,7 @@ const products = [
   {
     image: '/images/9.jpg',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'Zelforn restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',
@@ -101,7 +101,7 @@ const products = [
   {
     image: '/images/10.jpg',
     name: 'Pizza',
-    title: 'Holly Grail Restaurant',
+    title: 'ZuliParks restaurant',
     promotion: '20% off selected items',
     desc: 'Arabic, lebanese, chinese',
     rating: '4',

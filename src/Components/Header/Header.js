@@ -7,16 +7,6 @@ const Header = () => {
       <div className='header__logo'>
         <span>SHISHEO</span>
       </div>
-      <div className='header__search'>
-        <input
-          type='text'
-          placeholder='Search in chats'
-          onChange={(e) => {
-            searchProducts(e.target.value);
-            // e.target.value ? setSearching(true) : setSearching(false);
-          }}
-        />
-      </div>
     </div>
   );
 };
