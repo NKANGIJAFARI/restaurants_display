@@ -5,12 +5,18 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='header__logo'>
-        <span>SHISHEO</span>
+        <Link to='/' className='nav__links'>
+          <span>SHISHEO</span>
+        </Link>
       </div>
       <div>
-        <nav>
-          <Link to='/'>HOME</Link>
-          <Link to='/map'>MAP</Link>
+        <nav className='nav'>
+          <Link to='/' className='nav__links'>
+            <i class='fas fa-home'></i> HOME
+          </Link>
+          <Link to='/map' className='nav__links'>
+            <i class='fas fa-map-marker-alt'></i> MAP
+          </Link>
         </nav>
       </div>
     </div>

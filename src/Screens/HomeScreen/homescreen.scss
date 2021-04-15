@@ -12,9 +12,10 @@
 
   & .search {
     position: fixed;
-    top: 10px;
+    top: 31px;
     left: 50%;
     transform: translate(-50%, 0px);
+    z-index: 3;
 
     & input {
       font-size: 1.6rem;

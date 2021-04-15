@@ -9,20 +9,28 @@ const mapStyles = {
 export class MapContainer extends Component {
   render() {
     return (
-      <Map
-        google={this.props.google}
-        zoom={14}
-        style={mapStyles}
-        initialCenter={{
-          lat: -1.2884,
-          lng: 36.8233,
+      <div
+        style={{
+          position: 'absolute',
+          top: '50px',
+          width: '100%',
+          height: 'calc(100% - 50px)',
         }}>
-        <Marker onClick={this.onMarkerClick} name={'Current location'} />
+        <Map
+          google={this.props.google}
+          zoom={14}
+          style={mapStyles}
+          initialCenter={{
+            lat: -1.2884,
+            lng: 36.8233,
+          }}>
+          <Marker onClick={this.onMarkerClick} name={'Current location'} />
 
-        <InfoWindow onClose={this.onInfoWindowClose}>
-          <div>{/* <h1>{this.state.selectedPlace.name}</h1> */}</div>
-        </InfoWindow>
-      </Map>
+          <InfoWindow onClose={this.onInfoWindowClose}>
+            <div>{/* <h1>{this.state.selectedPlace.name}</h1> */}</div>
+          </InfoWindow>
+        </Map>
+      </div>
     );
   }
 }
