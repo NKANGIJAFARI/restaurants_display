@@ -9,6 +9,7 @@ const Product = ({
   rating,
   deliveryCost,
   deliveryTime,
+  deliveryDetails,
 }) => {
   return (
     <div className='product' id='product'>
@@ -20,7 +21,10 @@ const Product = ({
           <h2>{title}</h2>
           <p>{desc}</p>
           <h6>{deliveryCost}</h6>
-          <p>{promotion}</p>
+          <p className='promotion'>
+            <i class='fas fa-tag'></i>
+            {promotion}
+          </p>
         </div>
         <div className='product__details--right'>
           <span>
@@ -30,8 +34,8 @@ const Product = ({
             <i class='fas fa-star'></i>
             <i class='fas fa-star'></i>
           </span>
-          <h6>{desc}</h6>
           <h6>{deliveryTime}</h6>
+          <h6>{deliveryDetails}</h6>
         </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ const HomeScreen = () => {
           promotion={product.promotion}
           desc={product.desc}
           rating={product.rating}
-          delivery={product.delivery}
+          deliveryDetails={product.deliveryDetails}
           deliveryCost={product.deliveryCost}
           deliveryTime={product.deliveryTime}
         />
