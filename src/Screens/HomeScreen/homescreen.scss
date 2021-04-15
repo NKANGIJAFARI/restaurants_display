@@ -12,9 +12,9 @@
 
   & .search {
     position: fixed;
-    top: 48px;
+    top: 8px;
     left: 50%;
-    transform: translate(-50%, 0px);
+    transform: translate(-65%, 0px);
     z-index: 3;
 
     & form {
@@ -51,8 +51,58 @@
     grid-gap: 20px;
     padding: 40px 25px;
 
-    & form {
-      width: 300px;
+    & .search {
+      & form {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    & .search {
+      position: fixed;
+      top: 7px;
+      left: 62%;
+      transform: translate(-50%, 0px);
+      z-index: 3;
+
+      & form {
+        width: 320px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #wrapper {
+    & .search {
+      position: fixed;
+      top: 7px;
+      left: 62%;
+      transform: translate(-50%, 0px);
+      z-index: 3;
+
+      & form {
+        width: 280px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #wrapper {
+    & .search {
+      position: fixed;
+      top: 7px;
+      left: 62%;
+      transform: translate(-50%, 0px);
+      z-index: 3;
+
+      & form {
+        width: 270px;
+      }
     }
   }
 }

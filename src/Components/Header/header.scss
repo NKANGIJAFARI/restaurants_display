@@ -28,12 +28,13 @@
 
 @media only screen and (max-width: 980px) {
   .header {
-    padding: 0px 25px;
+    padding: 0px 10px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .header {
+    padding: 0px 5px;
     & .nav {
       display: none;
     }
