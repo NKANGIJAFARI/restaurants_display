@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Product from '../../Components/Product/Product';
 import Allproducts from '../../Data/data';
 import './homeScreen.scss';
@@ -6,15 +6,19 @@ import './homeScreen.scss';
 const HomeScreen = () => {
   const [searching, setSearching] = useState(false);
   const [products, setProducts] = useState(Allproducts);
+  const [keyWord, setKeyWord] = useState('');
 
-  const searchProducts = (searchText) => {
-    if (searchText) {
-      const existingProducts = products.filter((product) =>
-        product.title.toLowerCase().includes(searchText.toLowerCase()),
+  const searchProducts = (e) => {
+    if (e.target.value) {
+      const existingProducts = Allproducts.filter((product) =>
+        product.title.toLowerCase().includes(e.target.value.toLowerCase()),
       );
-
       setProducts(existingProducts);
+    } else {
+      setProducts(Allproducts);
     }
+
+    console.log(e.target.value);
   };
 
   return (
@@ -22,17 +26,15 @@ const HomeScreen = () => {
       <div className='header__search'>
         <input
           type='text'
-          placeholder='Search in chats'
-          onChange={(e) => {
-            searchProducts(e.target.value);
-            e.target.value ? setSearching(true) : setSearching(false);
-          }}
+          placeholder='Search in restaurants'
+          onChange={searchProducts}
         />
       </div>
       {/* Will be iterating in the products/restaurants and forEach one,
       we display a Product/restaurant and its details */}
-      {products.map((product) => (
+      {products.map((product, index) => (
         <Product
+          key={index}
           image={product.image}
           name={product.name}
           title={product.title}

@@ -22,17 +22,17 @@ const Product = ({
           <p>{desc}</p>
           <h6>{deliveryCost}</h6>
           <p className='promotion'>
-            <i class='fas fa-tag'></i>
+            <i className='fas fa-tag'></i>
             {promotion}
           </p>
         </div>
         <div className='product__details--right'>
           <span>
-            <i class='fas fa-star'></i>
-            <i class='fas fa-star'></i>
-            <i class='fas fa-star'></i>
-            <i class='fas fa-star'></i>
-            <i class='fas fa-star'></i>
+            <i className='fas fa-star'></i>
+            <i className='fas fa-star'></i>
+            <i className='fas fa-star'></i>
+            <i className='fas fa-star'></i>
+            <i className='fas fa-star'></i>
           </span>
           <h6>{deliveryTime}</h6>
           <h6>{deliveryDetails}</h6>
