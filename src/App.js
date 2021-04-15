@@ -7,7 +7,6 @@ const App = () => {
   return (
     <Router>
       <main className='App__container'>
-        <Header />
         <div className='main__wrapper'>
           <Route path='/' component={HomeScreen} />
           <Route path='/map' component={MapScreen} />

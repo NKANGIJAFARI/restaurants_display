@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from '../../Components/Product/Product';
 import products from '../../Data/data';
+import './homeScreen.scss';
 
 const HomeScreen = () => {
   return (
