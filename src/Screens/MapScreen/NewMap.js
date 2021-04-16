@@ -1,11 +1,31 @@
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { useState } from 'react';
+import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import restaurants from '../../Data/data';
 
 const MapContainer = (props) => {
-  const mapStyles = {
-    width: '100%',
-    height: '100%',
-  };
+  const [selectedCenter, setSelectedCenter] = useState(null);
+
+  /* Whenever the marker is clicked, it will update the state with the 
+  position of the clicked marker and we shall show info of the restaurant
+  located in that area */
+  {
+    selectedCenter && (
+      <InfoWindow
+        onCloseClick={() => {
+          setSelectedCenter(null);
+        }}
+        position={{
+          lat: selectedCenter.lat,
+          lng: selectedCenter.lng,
+        }}>
+        <h2>This is the place</h2>
+      </InfoWindow>
+    );
+  }
+
+  /* Each restaurant object has a location and this will be used to 
+  dynamically update the map with markers after iterating throught the 
+  restaurants*/
 
   const DisplayMarkers = () => {
     return restaurants.map((restaurant, index) => {
@@ -17,18 +37,29 @@ const MapContainer = (props) => {
             lat: restaurant.location.latitude,
             lng: restaurant.location.longitude,
           }}
-          onClick={() => console.log('You clicked me!')}
+          onClick={(e) => {
+            console.log(e);
+            setSelectedCenter(e.mapCenter);
+          }}
         />
       );
     });
   };
 
+  /* Our map will be exactly the size of its container and so its size and positioning 
+   will be customised on its parent element
+  */
+  const mapStyles = {
+    width: '100%',
+    height: '100%',
+  };
+
   return (
     <Map
       google={props.google}
-      zoom={8}
+      zoom={10}
       style={mapStyles}
-      initialCenter={{ lat: 47.444, lng: -122.176 }}>
+      initialCenter={{ lat: 25.2048, lng: 55.2708 }}>
       {DisplayMarkers()}
     </Map>
   );

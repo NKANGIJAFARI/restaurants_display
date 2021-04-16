@@ -9,7 +9,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { lat: 47.49855629475769, lng: -122.14184416996333 },
+    location: { lat: 25.1832, lng: -122.14184416996333 },
   },
 
   {
@@ -22,7 +22,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.2052192687988, longitude: -121.988426208496 },
+    location: { latitude: 25.0805, longitude: 55.1403 },
   },
   {
     image: '/images/3.webp',
@@ -34,7 +34,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.6307081, longitude: -122.1434325 },
+    location: { latitude: 25.1904, longitude: 55.2655 },
   },
   {
     image: '/images/4.webp',
@@ -46,7 +46,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.3084488, longitude: -122.2140121 },
+    location: { latitude: 25.1859, longitude: 55.2603 },
   },
   {
     image: '/images/5.jpg',
@@ -58,7 +58,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.5524695, longitude: -122.0425407 },
+    location: { latitude: 25.1859, longitude: 55.2603 },
   },
   {
     image: '/images/6.jpg',
@@ -82,7 +82,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.5524695, longitude: -122.0425407 },
+    location: { latitude: 25.1988, longitude: 55.2796 },
   },
   {
     image: '/images/8.jpg',
@@ -94,7 +94,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.5524695, longitude: -122.0425407 },
+    location: { latitude: 25.2106, longitude: 55.2794 },
   },
   {
     image: '/images/9.jpg',
@@ -106,7 +106,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.5524695, longitude: -122.0425407 },
+    location: { latitude: 25.0693, longitude: 55.1417 },
   },
   {
     image: '/images/10.jpg',
@@ -118,7 +118,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.5524695, longitude: -122.0425407 },
+    location: { latitude: 25.1972, longitude: 55.2744 },
   },
   {
     image: '/images/10.jpg',
@@ -130,7 +130,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.5524695, longitude: -122.0425407 },
+    location: { latitude: 25.0838, longitude: 55.2204 },
   },
   {
     image: '/images/10.jpg',
@@ -142,7 +142,7 @@ const restaurants = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
-    location: { latitude: 47.5524695, longitude: -122.0425407 },
+    location: { latitude: 25.2788, longitude: 55.3309 },
   },
 ];
 
