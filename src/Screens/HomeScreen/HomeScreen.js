@@ -23,7 +23,7 @@ const HomeScreen = () => {
       <div className='search'>
         <form>
           <button type='submit'>
-            <i class='fas fa-search'></i>
+            <i className='fas fa-search'></i>
           </button>
           <input
             type='text'

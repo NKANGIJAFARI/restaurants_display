@@ -1,17 +1,21 @@
-import Map, { GoogleApiWrapper } from './Map';
+// import Map, { GoogleApiWrapper } from './Map';
+import GoogleApiWrapper from './NewMap';
 import React from 'react';
-import { MapContainer } from './Map';
 
 const MapScreen = () => {
   return (
-    <div>
-      <input
-        type='text'
-        placeholder='Search in restaurants'
-        // onChange={searchProducts}
-      />
-      <Map />
-    </div>
+    <>
+      <input type='text' placeholder='Search in restaurants' />
+      <div
+        style={{
+          height: 'calc(100vh - 50px)',
+          position: 'absolute',
+          width: ' 100%',
+          top: '50px',
+        }}>
+        <GoogleApiWrapper />
+      </div>
+    </>
   );
 };
 

@@ -7,10 +7,10 @@ const Header = () => {
       <div className='smallScreenNav'>
         <nav className='smallScreenNav__nav'>
           <Link to='/' className='smallScreenNav__nav--links'>
-            <i class='fas fa-home'></i>
+            <i className='fas fa-home'></i>
           </Link>
           <Link to='/map' className='smallScreenNav__nav--links'>
-            <i class='fas fa-map-marker-alt'></i>
+            <i className='fas fa-map-marker-alt'></i>
           </Link>
         </nav>
       </div>
@@ -22,10 +22,10 @@ const Header = () => {
       <div>
         <nav className='nav'>
           <Link to='/' className='nav__links'>
-            <i class='fas fa-home'></i> HOME
+            <i className='fas fa-home'></i> HOME
           </Link>
           <Link to='/map' className='nav__links'>
-            <i class='fas fa-map-marker-alt'></i> MAP
+            <i className='fas fa-map-marker-alt'></i> MAP
           </Link>
         </nav>
       </div>
