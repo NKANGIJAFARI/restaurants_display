@@ -1,6 +1,6 @@
-// import Map, { GoogleApiWrapper } from './Map';
-import GoogleApiWrapper from './NewMap';
 import React from 'react';
+import GoogleApiWrapper from './NewMap';
+import restaurants from '../../Data/data';
 
 const MapScreen = () => {
   return (

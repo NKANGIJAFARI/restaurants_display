@@ -1,4 +1,4 @@
-const products = [
+const restaurants = [
   {
     image: '/images/1.jpg',
     name: 'Pizza',
@@ -9,7 +9,9 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { lat: 47.49855629475769, lng: -122.14184416996333 },
   },
+
   {
     image: '/images/2.jpg',
     name: 'Pizza',
@@ -20,6 +22,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.2052192687988, longitude: -121.988426208496 },
   },
   {
     image: '/images/3.webp',
@@ -31,6 +34,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.6307081, longitude: -122.1434325 },
   },
   {
     image: '/images/4.webp',
@@ -42,6 +46,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.3084488, longitude: -122.2140121 },
   },
   {
     image: '/images/5.jpg',
@@ -53,6 +58,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
   {
     image: '/images/6.jpg',
@@ -64,6 +70,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
   {
     image: '/images/7.jpeg',
@@ -75,6 +82,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
   {
     image: '/images/8.jpg',
@@ -86,6 +94,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
   {
     image: '/images/9.jpg',
@@ -97,6 +106,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
   {
     image: '/images/10.jpg',
@@ -108,6 +118,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
   {
     image: '/images/10.jpg',
@@ -119,6 +130,7 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
   {
     image: '/images/10.jpg',
@@ -130,7 +142,8 @@ const products = [
     deliveryDetails: 'cash-on-delivery',
     deliveryCost: 'Delivery: aed 10',
     deliveryTime: 'Delivery with 25mins',
+    location: { latitude: 47.5524695, longitude: -122.0425407 },
   },
 ];
 
-export default products;
+export default restaurants;
