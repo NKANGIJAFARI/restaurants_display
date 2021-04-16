@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.scss';
 const Header = () => {
+  /* We shall have two navigations in the source code and this will be
+  displayed according to what screen size.. we would have played around with one
+  but to avoid complication due to the position absolutes and relativity
+  of parent elements we shall "@Keep it simple stupid (KISS)" and achieve 
+  our results simply*/
+
   return (
     <div className='header'>
       <div className='smallScreenNav'>

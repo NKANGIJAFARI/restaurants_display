@@ -31,6 +31,8 @@
   }
 }
 
+/* Media queries has no specific positions or screen sizes. 
+They are written where they are needed, its on whre it breaks*/
 @media only screen and (max-width: 980px) {
   .header {
     padding: 0px 10px;
